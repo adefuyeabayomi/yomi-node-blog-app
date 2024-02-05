@@ -1,0 +1,2 @@
+The site should contain only the finished html files.
+The data for how the files should be organized will be gotten via the data.js files in the js folder

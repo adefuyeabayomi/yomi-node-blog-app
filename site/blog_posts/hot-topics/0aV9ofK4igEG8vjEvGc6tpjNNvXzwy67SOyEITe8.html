@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 	Master (Your) LAGOS CAR DEALERS in 5 Minutes A Day | Pristine Car Blog | Latest updates in Nigeria's auto industry.</title>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <meta name="description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="author" content="Adefuye Abayomi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="../../blog_assets/images/utils/favicon.png" type="image/x-icon">
+
+        <!--social facebook,twitter,-->
+        <meta name="og	Master (Your) LAGOS CAR DEALERS in 5 Minutes A Day" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="og:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="og:image" content="../../blog_assets/images/social_cover_main.png">
+        <meta name="twitter	Master (Your) LAGOS CAR DEALERS in 5 Minutes A Day" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="twitter:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="twitter:image" content="../../blog_assets/images/social_cover_main.png">
+
+        <!--links to css styles-->
+        <link type="text/css" rel="stylesheet" href="../../css/mains.css">
+        <link type="text/css" rel="stylesheet" href="../../css/homepage_style.css">
+        <link type="text/css" rel="stylesheet" href="../../css/animate.css">
+        <link type="text/css" rel="stylesheet" href="../../css/article-style.css">
+
+
+        <!-- links to preloaded scripts-->
+
+    </head>
+    <body >
+        <div id="app" class="container-main">
+            <div class="header-container">
+                <header class="header-main">
+                    <!--The header contains the cartegories, pristine logos, the menu, guest indicators, and social media prompts.-->
+                    <div class="header-utils">
+                            <div class="util-logo">
+                                <div class="logo-container">
+                                    <a href="#"><!--link to homepage-->
+                                        <img src="../../blog_assets/images/utils/logo_base.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="util-social hide-320px">
+                                <div class="header-social-container">
+                                    <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div class="header-social-icons hide-320px">
+                                    <p><span class="facebook-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="../../blog_assets/images/utils/Facebook Icon.png"></a></span><span class="twitter-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="../../blog_assets/images/utils/Twitter Icon.png"></a></span><span class="instagram-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="../../blog_assets/images/utils/Instagram icon.png"></a></span></p>
+                                </div>
+                            </div>
+                            <div class="util-user hide-320px">
+                                <div class="header-user-container ">
+                                    <p><span class="user-icon-container"><img src="../../blog_assets/images/utils/User Icon.png"></span></p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div>
+                                    <p>{{guest}}</p>
+                                </div>
+                            </div>
+                            <div class="util-hamburger">
+                                <div class="header-hamburger-container">
+                                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
+                                        <div class="yt-tight pointercursor" @click="updateHam()">
+                                            <div class="yt-ham" :class="[ham]">
+                                                <div class="yt-ham-line"></div>
+                                                <div class="yt-ham-line top"></div>
+                                                <div class="yt-ham-line bottom"></div>
+                                                <div class="yt-ham-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="header-cartegories">
+                        <div class="header-cartegories-container">
+                            <ul>
+                                <li><a href="../../index.html">Home</a></li>
+                                <li><a href="../../hot-topics.html">Hot Topics</a></li>
+                                <li><a href="../../car-news.html">Car News</a></li>
+                                <li><a href="../../reviews.html">Reviews</a></li>
+                                <li><a href="../../new and used cars research.html">New and Used Cars Research</a></li>
+                                <li><a href="../../car care.html">Car Care</a></li>
+                                <li><a href="../../hot new wheels.html">Hot New Wheels</a></li>
+                                <li><a href="../../about-us.html">About Us</a></li>
+                                <li><a href="../../contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="blog-menu-container" :class="[animateClass]">
+                <div class="blog-menu">
+                    <div>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../hot-topics.html">Hot Topics</a></li>
+                            <li><a href="../../car-news.html">Car News</a></li>
+                            <li><a href="../../reviews.html">Reviews</a></li>
+                            <li><a href="../../new and used cars research.html">New and Used Cars Research</a></li>
+                            <li><a href="../../car care.html">Car Care</a></li>
+                            <li><a href="../../hot new wheels.html">Hot New Wheels</a></li>
+                            <li><a href="../../about-us.html">About Us</a></li>
+                            <li><a href="../../contact.html">Contact</a></li>
+                        </ul> 
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mains-container">
+                <div class="mains-main">
+                    <div class="main-width">
+                        <div class="category-indicators-container">
+                            <div>
+                                <p class="category-indicator-desc"><a href="../../index.html">Home</a> >> <span> Hot Topics </span> >> Post</p>
+                            </div>
+                        </div>
+                        
+                        <div class="section-divider"></div>
+
+                        <div class="post-title-container">
+                            <div>
+                                <p class="post-title section-title-style">	Master (Your) LAGOS CAR DEALERS in 5 Minutes A Day</p>
+                            </div> 
+                        </div>
+                        
+                        <div class="post-details-container">
+                            <div>
+                                <p>Cartegory >> Hot Topics </p>
+                                <p class="post-published-time">Published : Saturday, October 22, 2022 12:29 AM</p>
+                            </div>
+                        </div>
+                        <div class="article-image-container">
+                            <div>
+                                <img src=" ../../blog_assets/images/uploads/pexels-torsten-dettlaff-70912bbrGaTDuKHmcKVwMtdqeqw91NK7gAN.jpg ">
+                                <p class="photo-credits">Photo Credits :  </p>
+                            </div>
+                        </div>
+                         <div class="article-text-block">
+    <div>
+        <p> Even the start date is a matter of some misconception. Many assume, wrongly, that the reign of King Aegon I Targaryen began on the day he landed at the mouth of the Blackwater Rush, beneath the three hills where the city of King’s Landing would eventually stand. Not so. The day of Aegon’s Landing was celebrated by the king and his descendants, but the Conqueror actually dated the start of his reign from the day he was crowned and anointed in the Starry Sept of Oldtown by the High Septon of the Faith. This coronation took place two years after Aegon’s Landing, well after all three of the major battles of the Wars of Conquest had been fought and won. Thus it can be seen that most of Aegon’s actual conquering took place from 2–1 BC, Before the Conquest. </p>
+    </div>
+</div>
+ 
+                        <div class="section-divider"></div>
+                        <div class="related-cat-container ">
+    <div class="cartegory carnews">
+        <div>
+            <div class="cartegory-container-main">
+                <div class="trending-header">
+                    <p class="section-title-style">More in this category</p>
+                    <p class="trending-desc">Find all the most recent updated right here now.</p>
+                </div>
+            </div>
+            <div class="cartegory-contents">
+                <div class="category-content-01">
+    <div>
+        <div class="card">
+            <a href=" :pathToArticle ">
+                <div class="card-image-container">
+                    <div class="card-image" style="background-image: url(../../blog_assets/images/uploads/download (2)0fd9T8iFOBJ63ORHoCGUTVxPQjJ0EH.jpg)">
+                        <div class="card-contents-container">
+                            <p class="card-content-title"> Your Key To Success: LAGOS CAR DEALERS </p>
+                            <p class="card-content-main"> Even the start date is a matter of some misconception. Many assume, wrongly, that the reign of King Aegon I Targaryen began on the day he landed at the mouth of the Blackwater Rush, beneath the three hills where the city of King’s Landing would eventually stand. Not so. The day of Aegon’s Landing was celebrated by the king and his descendants, but the Conqueror actually dated the start of his reign from the day he was crowned and anointed in the Starry Sept of Oldtown by the High Septon of the Faith. This coronation took place two years after Aegon’s Landing, well after all three of the major battles of the Wars of Conquest had been fought and won. Thus it can be seen that most of Aegon’s actual conquering took place from 2–1 BC, Before the Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                            <div class="card-content-blog-info">
+                                <p class="card-content-cate"><span> Hot Topics </span></p>
+                                <p class="card-content-published-time"> Saturday, October 22, 2022 12:29 AM </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="category-content-01">
+    <div>
+        <div class="card">
+            <a href=" :pathToArticle ">
+                <div class="card-image-container">
+                    <div class="card-image" style="background-image: url(../../blog_assets/images/uploads/download (7)MlqZoudOVmnacEqiwvjk53PI6xwta6.jfif)">
+                        <div class="card-contents-container">
+                            <p class="card-content-title"> Want To Step Up Your LAGOS CAR DEALERS? You Need To Read This First </p>
+                            <p class="card-content-main"> The maesters of the Citadel who keep the histories of Westeros have used Aegon’s Conquest as their touchstone for the past three hundred years. Births, deaths, battles, and other events are dated either AC (After the Conquest) or BC (Before the Conquest). <span class="readmore-text">>>> Read More >>></span></p>
+                            <div class="card-content-blog-info">
+                                <p class="card-content-cate"><span> Hot Topics </span></p>
+                                <p class="card-content-published-time"> Saturday, October 22, 2022 12:25 AM </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="category-content-01">
+    <div>
+        <div class="card">
+            <a href=" :pathToArticle ">
+                <div class="card-image-container">
+                    <div class="card-image" style="background-image: url(../../blog_assets/images/uploads/download (1)ScDWt9SelXgIFGpz6gvSelC97o864V.jpg)">
+                        <div class="card-contents-container">
+                            <p class="card-content-title"> Get The Most Out of LAGOS CAR DEALERS and Facebook </p>
+                            <p class="card-content-main"> True scholars know that such dating is far from precise. Aegon Targaryen’s conquest of the Seven Kingdoms did not take place in a single day. More than two years passed between Aegon’s landing and his Oldtown coronation…and even then the Conquest remained incomplete, since Dorne remained unsubdued. Sporadic attempts to bring the Dornishmen into the realm continued all through King Aegon’s reign and well into the reigns of his sons, making it impossible to fix a precise end date for the Wars of Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                            <div class="card-content-blog-info">
+                                <p class="card-content-cate"><span> Hot Topics </span></p>
+                                <p class="card-content-published-time"> Saturday, October 22, 2022 12:27 AM </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+            </div>
+            <div class="cartegory-load-more-button">
+                <button class="pointercursor">>>> See more in this category >>></button>
+            </div>
+        </div>
+    </div>
+</div>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <footer>
+                    <div class="footer-main">
+                        <div class="pristine-user-declaration-container">
+                            <div>
+                                <div class="bottom-logo-container">
+                                    <img src="../../blog_assets/images/utils/logo_base.svg">
+                                </div>
+                                <div>
+                                    <p class="user-declaration">
+                                        We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. For feedback or complaints, you can send a mail to <a href="mailto:email@gmail.com">Our User Support</a>, or send a whatsapp message to <a href="https://chat.whatsapp/number">Our Whatsapp Support</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-bottom-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Cartegories</p>
+                                </div>
+                                <div class="cartegories-bottom-contents">
+                                    <div>
+                                        <p class="cb-item">Hot Topics</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car News</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Reviews</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">New and Used Cars Research</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car Care</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Hot New Wheels</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="header-utils bottom">
+                                        <div class="util-social">
+                                            <div class="header-social-container">
+                                                <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="header-social-icons">
+                                                <p><span class="facebook-icon-container"><img src="../../blog_assets/images/utils/Facebook Icon.png"></span><span class="twitter-icon-container"><img src="../../blog_assets/images/utils/Twitter Icon.png"></span><span class="instagram-icon-container"><img src="../../blog_assets/images/utils/Instagram icon.png"></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-links-container-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Quick Links</p>
+                                </div>
+                                <div>
+                                    <ul class="bottom-links">
+                                        <li>Home</li>
+                                        <li>Cartegories</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                        <li>Social</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright of Pristine Car Blog &copy 2022.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../../js/vue.min.js" defer></script>
+    <script type="text/javascript" src="../../js/site-main.js" defer></script>
+</html>

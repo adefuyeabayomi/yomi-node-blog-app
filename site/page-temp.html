@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pristine Car Blog | Latest updates in Nigeria's auto industry.</title>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <meta name="description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="author" content="Adefuye Abayomi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="./blog_assets/images/utils/favicon.png" type="image/x-icon">
+
+        <!--social facebook,twitter,-->
+        <meta name="og:title" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="og:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="og:image" content="./blog_assets/images/social_cover_main.png">
+        <meta name="twitter:title" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="twitter:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="twitter:image" content="./blog_assets/images/social_cover_main.png">
+
+        <!--links to css styles-->
+        <link type="text/css" rel="stylesheet" href="./css/mains.css">
+        <link type="text/css" rel="stylesheet" href="./css/homepage_style.css">
+        <link type="text/css" rel="stylesheet" href="./css/animate.css">
+
+
+        <!--links to preloaded scripts-->
+
+    </head>
+    <body >
+        <div id="app" class="container-main">
+            <div class="header-container">
+                <header class="header-main">
+                    <!--The header contains the cartegories, pristine logos, the menu, guest indicators, and social media prompts.-->
+                    <div class="header-utils">
+                            <div class="util-logo">
+                                <div class="logo-container">
+                                    <a href="#"><!--link to homepage-->
+                                        <img src="./blog_assets/images/utils/logo_base.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="util-social hide-320px">
+                                <div class="header-social-container">
+                                    <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div class="header-social-icons hide-320px">
+                                    <p><span class="facebook-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Facebook Icon.png"></a></span><span class="twitter-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Twitter Icon.png"></a></span><span class="instagram-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Instagram icon.png"></a></span></p>
+                                </div>
+                            </div>
+                            <div class="util-user hide-320px">
+                                <div class="header-user-container ">
+                                    <p><span class="user-icon-container"><img src="./blog_assets/images/utils/User Icon.png"></span></p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div>
+                                    <p>{{guest}}</p>
+                                </div>
+                            </div>
+                            <div class="util-hamburger">
+                                <div class="header-hamburger-container">
+                                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
+                                        <div class="yt-tight pointercursor" @click="updateHam()">
+                                            <div class="yt-ham" :class="[ham]">
+                                                <div class="yt-ham-line"></div>
+                                                <div class="yt-ham-line top"></div>
+                                                <div class="yt-ham-line bottom"></div>
+                                                <div class="yt-ham-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="header-cartegories">
+                        <div class="header-cartegories-container">
+                            <ul>
+                                <li><a class="active-nav" href="#">Home</a></li>
+                                <li><a href="./hot-topics.html">Hot Topics</a></li>
+                                <li><a href="./car-news.html">Car News</a></li>
+                                <li><a href="./reviews.html">Reviews</a></li>
+                                <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
+                                <li><a href="./car care.html">Car Care</a></li>
+                                <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="blog-menu-container" :class="[animateClass]">
+                <div class="blog-menu">
+                    <div>
+                        <ul>
+                            <li><a class="active-nav" href="#">Home</a></li>
+                            <li><a href="./hot-topics.html">Hot Topics</a></li>
+                            <li><a href="./car-news.html">Car News</a></li>
+                            <li><a href="./reviews.html">Reviews</a></li>
+                            <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
+                            <li><a href="./car care.html">Car Care</a></li>
+                            <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul> 
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mains-container">
+                <div class="mains-main">
+                    <div class="main-width">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <footer>
+                    <div class="footer-main">
+                        <div class="pristine-user-declaration-container">
+                            <div>
+                                <div class="bottom-logo-container">
+                                    <img src="./blog_assets/images/utils/logo_base.svg">
+                                </div>
+                                <div>
+                                    <p class="user-declaration">
+                                        We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. For feedback or complaints, you can send a mail to <a href="mailto:email@gmail.com">Our User Support</a>, or send a whatsapp message to <a href="https://chat.whatsapp/number">Our Whatsapp Support</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-bottom-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Cartegories</p>
+                                </div>
+                                <div class="cartegories-bottom-contents">
+                                    <div>
+                                        <p class="cb-item">Hot Topics</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car News</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Reviews</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">New and Used Cars Research</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car Care</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Hot New Wheels</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="header-utils bottom">
+                                        <div class="util-social">
+                                            <div class="header-social-container">
+                                                <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="header-social-icons">
+                                                <p><span class="facebook-icon-container"><img src="./blog_assets/images/utils/Facebook Icon.png"></span><span class="twitter-icon-container"><img src="./blog_assets/images/utils/Twitter Icon.png"></span><span class="instagram-icon-container"><img src="./blog_assets/images/utils/Instagram icon.png"></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-links-container-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Quick Links</p>
+                                </div>
+                                <div>
+                                    <ul class="bottom-links">
+                                        <li>Home</li>
+                                        <li>Cartegories</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                        <li>Social</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright of Pristine Car Blog &copy 2022.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/vue.min.js" defer></script>
+    <script type="text/javascript" src="./js/site-main.js" defer></script>
+</html>

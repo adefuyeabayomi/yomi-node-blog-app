@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pristine Car Blog | Latest updates in Nigeria's auto industry.</title>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <meta name="description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="author" content="Adefuye Abayomi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="./blog_assets/images/utils/favicon.png" type="image/x-icon">
+
+        <!--social facebook,twitter,-->
+        <meta name="og:title" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="og:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="og:image" content="./blog_assets/images/social_cover_main.png">
+        <meta name="twitter:title" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="twitter:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="twitter:image" content="./blog_assets/images/social_cover_main.png">
+
+        <!--links to css styles-->
+        <link type="text/css" rel="stylesheet" href="./css/mains.css">
+        <link type="text/css" rel="stylesheet" href="./css/homepage_style.css">
+        <link type="text/css" rel="stylesheet" href="./css/animate.css">
+
+
+        <!--links to preloaded scripts-->
+
+    </head>
+    <body >
+        <div id="app" class="container-main">
+            <div class="header-container">
+                <header class="header-main">
+                    <!--The header contains the cartegories, pristine logos, the menu, guest indicators, and social media prompts.-->
+                    <div class="header-utils">
+                            <div class="util-logo">
+                                <div class="logo-container">
+                                    <a href="#"><!--link to homepage-->
+                                        <img src="./blog_assets/images/utils/logo_base.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="util-social hide-320px">
+                                <div class="header-social-container">
+                                    <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div class="header-social-icons hide-320px">
+                                    <p><span class="facebook-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Facebook Icon.png"></a></span><span class="twitter-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Twitter Icon.png"></a></span><span class="instagram-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Instagram icon.png"></a></span></p>
+                                </div>
+                            </div>
+                            <div class="util-user hide-320px">
+                                <div class="header-user-container ">
+                                    <p><span class="user-icon-container"><img src="./blog_assets/images/utils/User Icon.png"></span></p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div>
+                                    <p>{{guest}}</p>
+                                </div>
+                            </div>
+                            <div class="util-hamburger">
+                                <div class="header-hamburger-container">
+                                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
+                                        <div class="yt-tight pointercursor" @click="updateHam()">
+                                            <div class="yt-ham" :class="[ham]">
+                                                <div class="yt-ham-line"></div>
+                                                <div class="yt-ham-line top"></div>
+                                                <div class="yt-ham-line bottom"></div>
+                                                <div class="yt-ham-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="header-cartegories">
+                        <div class="header-cartegories-container">
+                            <ul>
+                                <li><a class="active-nav" href="#">Home</a></li>
+                                <li><a href="./hot-topics.html">Hot Topics</a></li>
+                                <li><a href="./car-news.html">Car News</a></li>
+                                <li><a href="./reviews.html">Reviews</a></li>
+                                <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
+                                <li><a href="./car care.html">Car Care</a></li>
+                                <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="blog-menu-container" style="opacity : 0" :class="[animateClass]">
+                <div class="blog-menu">
+                    <div>
+                        <ul>
+                            <li><a class="active-nav" href="#">Home</a></li>
+                            <li><a href="./hot-topics.html">Hot Topics</a></li>
+                            <li><a href="./car-news.html">Car News</a></li>
+                            <li><a href="./reviews.html">Reviews</a></li>
+                            <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
+                            <li><a href="./car care.html">Car Care</a></li>
+                            <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul> 
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mains-container">
+                <main class="mains-main">
+                    <div class="main-width"><!--this div has the main width property so that every content within it can have the same width. any container that does not have main width can then assume any width as specified.-->
+                        
+                        <div class="banner-container">
+                            <p class="banner-desc-text">Pristine Car Blog. The No 1 Authentic Auto Updates In Nigeria</p>
+                            <div class="search-container">
+                                <p class="search-main-contents"><button class="search-button">Search</button><span class="search-input-container"><input class="search-input" type="text" name="search-item"></span></p>
+                            </div>
+                        </div>
+                        <div class="trending-container">
+                            <div class="trending-header">
+                                <p class="section-title-style">Top Posts</p>
+                                <p class="trending-desc">Find all the interesting and new car updates in naija now right here.</p>
+                            </div>
+                            <div class="trending-contents-container">
+                                <div class="trends-container-01">
+                                    <div class="trend-container-01-01">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            <div class="card">
+    <a href=" ./blog_posts/car-news/Rcys22ahgMChCRbcoAnDAE6ro2l3A8Bok3rbQ2rW.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-torsten-dettlaff-70912qD8J4Nt0BqquKhHlrMrbM5hLIVz09i.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> 10 Tips That Will Make You Influential In CAR TAXES </p>
+                    <p class="card-content-main"> All three siblings had shown themselves to be dragonlords before they wed. Of the five dragons who had flown with Aenar the Exile from Valyria, only one survived to Aegon’s day: the great beast called Balerion, the Black Dread. The dragons Vhagar and Meraxes were younger, hatched on Dragonstone itself. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Car News</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:40 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-01-02">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            <div class="card">
+    <a href=" ./blog_posts/car-care/zkZysg2lqHSJTfPjM0aiYdLGY8dy3AravwiTkKsF.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/Large-46489-2022ElantraA0kuw094Q3auHtYLAYyko9QTiCJ5E6.webp )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> 	5 Problems Everyone Has With CHEAP CAR PARTS – How To Solved Them </p>
+                    <p class="card-content-main"> A common myth, oft heard amongst the ignorant, claims that Aegon Targaryen had never set foot upon the soil of Westeros until the day he set sail to conquer it, but this cannot be truth. Years before that sailing, the Painted Table had been carved and decorated at Lord Aegon’s command; a massive slab of wood, some fifty feet long, carved in the shape of Westeros, and painted to show all the woods and rivers and towns and castles of the Seven Kingdoms. Plainly, Aegon’s interest in Westeros long predated the events that drove him to war. As well, there are reliable reports of Aegon and his sister Visenya visiting the Citadel of Oldtown in their youth, and hawking on the Arbor as guests of Lord Redwyne. He may have visited Lannisport as well; accounts differ. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Car Care</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 1:47 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-01-03">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            <div class="card">
+    <a href=" ./blog_posts/hot-topics/5S2xI8QNzh35dORbVwBW0obgm6Yd5h5nz8BXqzKU.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/toyota-landcruiser-prado-banner-1S6xet9U3cJda5tfncQV4kkcPvsqAWm.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Get The Most Out of LAGOS CAR DEALERS and Facebook </p>
+                    <p class="card-content-main"> True scholars know that such dating is far from precise. Aegon Targaryen’s conquest of the Seven Kingdoms did not take place in a single day. More than two years passed between Aegon’s landing and his Oldtown coronation…and even then the Conquest remained incomplete, since Dorne remained unsubdued. Sporadic attempts to bring the Dornishmen into the realm continued all through King Aegon’s reign and well into the reigns of his sons, making it impossible to fix a precise end date for the Wars of Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 1:40 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trends-container-02">
+                                    <div class="trend-container-02-01">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            <div class="card">
+    <a href=" ./blog_posts/hot-topics/7yOS0mK9EPK0slor4ETr3pwcBhxY1UfT3GqYvnU6.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-baskin-creative-studios-1766838qLp8xB6uZRfjmkeo7rHKzrzUf63W5F.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Why You Never See LAGOS CAR DEALERS That Actually Works </p>
+                    <p class="card-content-main"> Even the start date is a matter of some misconception. Many assume, wrongly, that the reign of King Aegon I Targaryen began on the day he landed at the mouth of the Blackwater Rush, beneath the three hills where the city of King’s Landing would eventually stand. Not so. The day of Aegon’s Landing was celebrated by the king and his descendants, but the Conqueror actually dated the start of his reign from the day he was crowned and anointed in the Starry Sept of Oldtown by the High Septon of the Faith. This coronation took place two years after Aegon’s Landing, well after all three of the major battles of the Wars of Conquest had been fought and won. Thus it can be seen that most of Aegon’s actual conquering took place from 2–1 BC, Before the Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:30 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-02-02">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            <div class="card">
+    <a href=" ./blog_posts/hot-topics/G5pjV7Z8BYMeXmfpubW5me2cdLO2eQE5fI2Tz9xB.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-jeshootscom-138616cdmWCznV2FkBpzdnPU4AARiPnteAk.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> At Last, The Secret To LAGOS CAR DEALERS Is Revealed </p>
+                    <p class="card-content-main"> Yet even so, for the best part of a hundred years after the Doom of Valyria (the rightly named Century of Blood), House Targaryen looked east, not west, and took little interest in the affairs of Westeros. Gaemon Targaryen, brother and husband to Daenys the Dreamer, followed Aenar the Exile as Lord of Dragonstone, and became known as Gaemon the Glorious. Gaemon’s son Aegon and his daughter Elaena ruled together after his death. After them the lordship passed to their son Maegon, his brother Aerys, and Aerys’s sons, Aelyx, Baelon, and Daemion. The last of the three brothers was Daemion, whose son Aerion then succeeded to Dragonstone. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:36 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-02-03">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            <div class="card">
+    <a href=" ./blog_posts/hot-topics/HZzvkQQFYugf3XdHbELVwxLLrw3khKOtagPLlHiJ.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-stein-egil-liland-3408744J8FCbtEJklUg8B5gKWkqIg4kvwchsZ.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Here Is A Method That Is Helping LAGOS CAR DEALERS </p>
+                    <p class="card-content-main"> Dragonstone had been the westernmost outpost of Valyrian power for two centuries. Its location athwart the Gullet gave its lords a stranglehold on Blackwater Bay and enabled both the Targaryens and their close allies, the Velaryons of Driftmark (a lesser house of Valyrian descent) to fill their coffers off the passing trade. Velaryon ships, along with those of another allied Valyrian house, the Celtigars of Claw Isle, dominated the middle reaches of the narrow sea, whilst the Targaryens ruled the skies with their dragons. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:35 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                    <div class="secondary-width "><!--container for the second row that has the sidebar using flex -->
+                        <div class="second-group-container">
+                            <div class="second-group">
+                                <div class="latests-container">
+                                    <div class="trending-header">
+                                        <p class="section-title-style">Most Recent Posts</p>
+                                        <p class="trending-desc">Find all the most recent updated right here now.</p>
+                                    </div>
+                                    <div class="latest-contents-container">
+                                        <div class="latests-content-01">
+                                            <div class="card">
+    <a href=" ./blog_posts/reviews/pKJbx3spCaxkHW33b2bzCouFOgcov4Ls1BG5ygLm.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/maxresdefaultBvBzIgiP6ZAlx3VlcMo9HXawLQLOww.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> How to create a new account on toyota smart and keep your car expenses on a watch. </p>
+                    <p class="card-content-main"> How promotion excellent curiosity yet attempted happiness. Gay prosperous impression had conviction. For every delay death ask style. Me mean able my by in they. Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Reviews</span></p>
+                        <p class="card-content-published-time">Friday, October 21, 2022 10:56 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                        <div class="latests-content-02">
+                                            <div class="card">
+    <a href=" ./blog_posts/reviews/03oPxd9MEqlGnFBYwC1dTNqHf2EpXAcIvxP2pn1s.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/toyota-landcruiser-prado-banner-1tpJ6aSiKSs8deZkWE7v9c65xyWChin.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> A new dawn </p>
+                    <p class="card-content-main"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Reviews</span></p>
+                        <p class="card-content-published-time">Friday, October 21, 2022 10:57 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                        <div class="latests-content-03">
+                                            <div class="card">
+    <a href=" ./blog_posts/hot-topics/CCpmaW7TxRhXsWfPWrW6AqQXkaQTvRNrMPJDmD0n.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/Large-46489-2022ElantradJ1GmuhYWKtaSS2xLsyXBgKC9zyZwt.webp )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Want To Step Up Your LAGOS CAR DEALERS? You Need To Read This First </p>
+                    <p class="card-content-main"> The maesters of the Citadel who keep the histories of Westeros have used Aegon’s Conquest as their touchstone for the past three hundred years. Births, deaths, battles, and other events are dated either AC (After the Conquest) or BC (Before the Conquest). <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:25 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                        <div class="latests-content-04">
+                                            <div class="card">
+    <a href=" ./blog_posts/hot-topics/0aV9ofK4igEG8vjEvGc6tpjNNvXzwy67SOyEITe8.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-torsten-dettlaff-70912bbrGaTDuKHmcKVwMtdqeqw91NK7gAN.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> 	Master (Your) LAGOS CAR DEALERS in 5 Minutes A Day </p>
+                    <p class="card-content-main"> Even the start date is a matter of some misconception. Many assume, wrongly, that the reign of King Aegon I Targaryen began on the day he landed at the mouth of the Blackwater Rush, beneath the three hills where the city of King’s Landing would eventually stand. Not so. The day of Aegon’s Landing was celebrated by the king and his descendants, but the Conqueror actually dated the start of his reign from the day he was crowned and anointed in the Starry Sept of Oldtown by the High Septon of the Faith. This coronation took place two years after Aegon’s Landing, well after all three of the major battles of the Wars of Conquest had been fought and won. Thus it can be seen that most of Aegon’s actual conquering took place from 2–1 BC, Before the Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:29 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                        <div class="latests-content-05">
+                                             <div class="card">
+    <a href=" ./blog_posts/hot-topics/7yOS0mK9EPK0slor4ETr3pwcBhxY1UfT3GqYvnU6.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-baskin-creative-studios-1766838qLp8xB6uZRfjmkeo7rHKzrzUf63W5F.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Why You Never See LAGOS CAR DEALERS That Actually Works </p>
+                    <p class="card-content-main"> Even the start date is a matter of some misconception. Many assume, wrongly, that the reign of King Aegon I Targaryen began on the day he landed at the mouth of the Blackwater Rush, beneath the three hills where the city of King’s Landing would eventually stand. Not so. The day of Aegon’s Landing was celebrated by the king and his descendants, but the Conqueror actually dated the start of his reign from the day he was crowned and anointed in the Starry Sept of Oldtown by the High Septon of the Faith. This coronation took place two years after Aegon’s Landing, well after all three of the major battles of the Wars of Conquest had been fought and won. Thus it can be seen that most of Aegon’s actual conquering took place from 2–1 BC, Before the Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:30 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-container">
+                                    <!--any sidebar worthy content here.-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top Posts In Car News Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/car-news/Rcys22ahgMChCRbcoAnDAE6ro2l3A8Bok3rbQ2rW.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-torsten-dettlaff-70912qD8J4Nt0BqquKhHlrMrbM5hLIVz09i.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> 10 Tips That Will Make You Influential In CAR TAXES </p>
+                    <p class="card-content-main"> All three siblings had shown themselves to be dragonlords before they wed. Of the five dragons who had flown with Aenar the Exile from Valyria, only one survived to Aegon’s day: the great beast called Balerion, the Black Dread. The dragons Vhagar and Meraxes were younger, hatched on Dragonstone itself. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Car News</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:40 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="aside">
+                        <div class="main-width">
+                            <div class="email-list-promo">
+                                <div class="email-sub-form-container">
+                                    <div>
+                                        <input class="email-sub-input" type="text" name="email" placeholder="Your Email">
+                                        <button class="email-sub-button">Join Now</button>
+                                    </div>
+                                </div>
+                                <div class="email-sub-cta-text">
+                                    <p class="section-title-style">Email Update</p>
+                                    <p>Sign Up to recieve the latest updates straight to your email.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top In Hot New Wheels Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/hot-new-wheels/MxrPaTnTO8rcGMDyw3662rYaqiUleZvuOGclNpVh.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/300902672_5996728927021459_6910255924527070893_n0bVJ1R7epzkFgKPEEVlZEaj3ndWZv1.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> 2 Ways You Can Use NEW LAND CRUISER PRADO To Become Irresistible To Customers </p>
+                    <p class="card-content-main"> At its apex Valyria was the greatest city in the known world, the center of civilization. Within its shining walls, twoscore rival houses vied for power and glory in court and council, rising and falling in an endless, subtle, oft savage struggle for dominance. The Targaryens were far from the most powerful of the dragonlords, and their rivals saw their flight to Dragonstone as an act of surrender, as cowardice. But Lord Aenar’s maiden daughter Daenys, known forever afterward as Daenys the Dreamer, had foreseen the destruction of Valyria by fire. And when the Doom came twelve years later, the Targaryens were the only dragonlords to survive. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot New Wheels</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:32 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Hot Topics, Find Top In This Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/hot-topics/5S2xI8QNzh35dORbVwBW0obgm6Yd5h5nz8BXqzKU.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/toyota-landcruiser-prado-banner-1S6xet9U3cJda5tfncQV4kkcPvsqAWm.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Get The Most Out of LAGOS CAR DEALERS and Facebook </p>
+                    <p class="card-content-main"> True scholars know that such dating is far from precise. Aegon Targaryen’s conquest of the Seven Kingdoms did not take place in a single day. More than two years passed between Aegon’s landing and his Oldtown coronation…and even then the Conquest remained incomplete, since Dorne remained unsubdued. Sporadic attempts to bring the Dornishmen into the realm continued all through King Aegon’s reign and well into the reigns of his sons, making it impossible to fix a precise end date for the Wars of Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 1<div class="card">
+    <a href=" ./blog_posts/hot-topics/HZzvkQQFYugf3XdHbELVwxLLrw3khKOtagPLlHiJ.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-stein-egil-liland-3408744J8FCbtEJklUg8B5gKWkqIg4kvwchsZ.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Here Is A Method That Is Helping LAGOS CAR DEALERS </p>
+                    <p class="card-content-main"> Dragonstone had been the westernmost outpost of Valyrian power for two centuries. Its location athwart the Gullet gave its lords a stranglehold on Blackwater Bay and enabled both the Targaryens and their close allies, the Velaryons of Driftmark (a lesser house of Valyrian descent) to fill their coffers off the passing trade. Velaryon ships, along with those of another allied Valyrian house, the Celtigars of Claw Isle, dominated the middle reaches of the narrow sea, whilst the Targaryens ruled the skies with their dragons. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:35 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>0 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/hot-topics/CCpmaW7TxRhXsWfPWrW6AqQXkaQTvRNrMPJDmD0n.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/Large-46489-2022ElantradJ1GmuhYWKtaSS2xLsyXBgKC9zyZwt.webp )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Want To Step Up Your LAGOS CAR DEALERS? You Need To Read This First </p>
+                    <p class="card-content-main"> The maesters of the Citadel who keep the histories of Westeros have used Aegon’s Conquest as their touchstone for the past three hundred years. Births, deaths, battles, and other events are dated either AC (After the Conquest) or BC (Before the Conquest). <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:25 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/hot-topics/0aV9ofK4igEG8vjEvGc6tpjNNvXzwy67SOyEITe8.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-torsten-dettlaff-70912bbrGaTDuKHmcKVwMtdqeqw91NK7gAN.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> 	Master (Your) LAGOS CAR DEALERS in 5 Minutes A Day </p>
+                    <p class="card-content-main"> Even the start date is a matter of some misconception. Many assume, wrongly, that the reign of King Aegon I Targaryen began on the day he landed at the mouth of the Blackwater Rush, beneath the three hills where the city of King’s Landing would eventually stand. Not so. The day of Aegon’s Landing was celebrated by the king and his descendants, but the Conqueror actually dated the start of his reign from the day he was crowned and anointed in the Starry Sept of Oldtown by the High Septon of the Faith. This coronation took place two years after Aegon’s Landing, well after all three of the major battles of the Wars of Conquest had been fought and won. Thus it can be seen that most of Aegon’s actual conquering took place from 2–1 BC, Before the Conquest. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:29 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/hot-topics/HZzvkQQFYugf3XdHbELVwxLLrw3khKOtagPLlHiJ.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/pexels-stein-egil-liland-3408744J8FCbtEJklUg8B5gKWkqIg4kvwchsZ.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Here Is A Method That Is Helping LAGOS CAR DEALERS </p>
+                    <p class="card-content-main"> Dragonstone had been the westernmost outpost of Valyrian power for two centuries. Its location athwart the Gullet gave its lords a stranglehold on Blackwater Bay and enabled both the Targaryens and their close allies, the Velaryons of Driftmark (a lesser house of Valyrian descent) to fill their coffers off the passing trade. Velaryon ships, along with those of another allied Valyrian house, the Celtigars of Claw Isle, dominated the middle reaches of the narrow sea, whilst the Targaryens ruled the skies with their dragons. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Hot Topics</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 12:35 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top Car Reviews Posts </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/reviews/03oPxd9MEqlGnFBYwC1dTNqHf2EpXAcIvxP2pn1s.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/toyota-landcruiser-prado-banner-1tpJ6aSiKSs8deZkWE7v9c65xyWChin.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> A new dawn </p>
+                    <p class="card-content-main"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Reviews</span></p>
+                        <p class="card-content-published-time">Friday, October 21, 2022 10:57 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/reviews/pKJbx3spCaxkHW33b2bzCouFOgcov4Ls1BG5ygLm.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/maxresdefaultBvBzIgiP6ZAlx3VlcMo9HXawLQLOww.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> How to create a new account on toyota smart and keep your car expenses on a watch. </p>
+                    <p class="card-content-main"> How promotion excellent curiosity yet attempted happiness. Gay prosperous impression had conviction. For every delay death ask style. Me mean able my by in they. Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Reviews</span></p>
+                        <p class="card-content-published-time">Friday, October 21, 2022 10:56 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/reviews/xlz1yNsSRC98OYLlXCd6BYRZqXLmHUcawB2zsbGa.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/21091294750DSC_0972GrsTTVWCYNVbt5PE1ev6kqJ6XOmYbg.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> Examining the raw power of the 2022 model Toyota Land Cruiser Prado XLE V6 Engine </p>
+                    <p class="card-content-main"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Reviews</span></p>
+                        <p class="card-content-published-time">Friday, October 21, 2022 10:56 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> New and Used Car Research. Find Posts in this Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     :1 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top In Car Care Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     <div class="card">
+    <a href=" ./blog_posts/car-care/zkZysg2lqHSJTfPjM0aiYdLGY8dy3AravwiTkKsF.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/Large-46489-2022ElantraA0kuw094Q3auHtYLAYyko9QTiCJ5E6.webp )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> 	5 Problems Everyone Has With CHEAP CAR PARTS – How To Solved Them </p>
+                    <p class="card-content-main"> A common myth, oft heard amongst the ignorant, claims that Aegon Targaryen had never set foot upon the soil of Westeros until the day he set sail to conquer it, but this cannot be truth. Years before that sailing, the Painted Table had been carved and decorated at Lord Aegon’s command; a massive slab of wood, some fifty feet long, carved in the shape of Westeros, and painted to show all the woods and rivers and towns and castles of the Seven Kingdoms. Plainly, Aegon’s interest in Westeros long predated the events that drove him to war. As well, there are reliable reports of Aegon and his sister Visenya visiting the Citadel of Oldtown in their youth, and hawking on the Arbor as guests of Lord Redwyne. He may have visited Lannisport as well; accounts differ. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Car Care</span></p>
+                        <p class="card-content-published-time">Saturday, October 22, 2022 1:47 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div> 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                </main>
+            </div>
+            <div class="footer-container">
+                <footer>
+                    <div class="footer-main">
+                        <div class="pristine-user-declaration-container">
+                            <div>
+                                <div class="bottom-logo-container">
+                                    <img src="./blog_assets/images/utils/logo_base.svg">
+                                </div>
+                                <div>
+                                    <p class="user-declaration">
+                                        We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. For feedback or complaints, you can send a mail to <a href="mailto:email@gmail.com">Our User Support</a>, or send a whatsapp message to <a href="https://chat.whatsapp/number">Our Whatsapp Support</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-bottom-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Cartegories</p>
+                                </div>
+                                <div class="cartegories-bottom-contents">
+                                    <div>
+                                        <p class="cb-item">Hot Topics</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car News</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Reviews</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">New and Used Cars Research</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car Care</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Hot New Wheels</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="header-utils bottom">
+                                        <div class="util-social">
+                                            <div class="header-social-container">
+                                                <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="header-social-icons">
+                                                <p><span class="facebook-icon-container"><img src="./blog_assets/images/utils/Facebook Icon.png"></span><span class="twitter-icon-container"><img src="./blog_assets/images/utils/Twitter Icon.png"></span><span class="instagram-icon-container"><img src="./blog_assets/images/utils/Instagram icon.png"></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-links-container-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Quick Links</p>
+                                </div>
+                                <div>
+                                    <ul class="bottom-links">
+                                        <li>Home</li>
+                                        <li>Cartegories</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                        <li>Social</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright of Pristine Car Blog &copy 2022.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/vue.min.js" defer></script>
+    <script type="text/javascript" src="./js/site-main.js" defer></script>
+</html>

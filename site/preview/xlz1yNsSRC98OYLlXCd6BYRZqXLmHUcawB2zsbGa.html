@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pristine Car Blog | Latest updates in Nigeria's auto industry.</title>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <meta name="description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="author" content="Adefuye Abayomi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="../blog_assets/images/utils/favicon.png" type="image/x-icon">
+
+        <!--social facebook,twitter,-->
+        <meta name="ogExamining the raw power of the 2022 model Toyota Land Cruiser Prado XLE V6 Engine" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="og:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="og:image" content="../blog_assets/images/social_cover_main.png">
+        <meta name="twitterExamining the raw power of the 2022 model Toyota Land Cruiser Prado XLE V6 Engine" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="twitter:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="twitter:image" content="../blog_assets/images/social_cover_main.png">
+
+        <!--links to css styles-->
+        <link type="text/css" rel="stylesheet" href="../css/mains.css">
+        <link type="text/css" rel="stylesheet" href="../css/homepage_style.css">
+        <link type="text/css" rel="stylesheet" href="../css/animate.css">
+        <link type="text/css" rel="stylesheet" href="../css/article-style.css">
+
+
+        <!-- links to preloaded scripts-->
+
+    </head>
+    <body >
+        <div id="app" class="container-main">
+            <div class="header-container">
+                <header class="header-main">
+                    <!--The header contains the cartegories, pristine logos, the menu, guest indicators, and social media prompts.-->
+                    <div class="header-utils">
+                            <div class="util-logo">
+                                <div class="logo-container">
+                                    <a href="#"><!--link to homepage-->
+                                        <img src="../blog_assets/images/utils/logo_base.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="util-social hide-320px">
+                                <div class="header-social-container">
+                                    <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div class="header-social-icons hide-320px">
+                                    <p><span class="facebook-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="../blog_assets/images/utils/Facebook Icon.png"></a></span><span class="twitter-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="../blog_assets/images/utils/Twitter Icon.png"></a></span><span class="instagram-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="../blog_assets/images/utils/Instagram icon.png"></a></span></p>
+                                </div>
+                            </div>
+                            <div class="util-user hide-320px">
+                                <div class="header-user-container ">
+                                    <p><span class="user-icon-container"><img src="../blog_assets/images/utils/User Icon.png"></span></p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div>
+                                    <p>{{guest}}</p>
+                                </div>
+                            </div>
+                            <div class="util-hamburger">
+                                <div class="header-hamburger-container">
+                                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
+                                        <div class="yt-tight pointercursor" @click="updateHam()">
+                                            <div class="yt-ham" :class="[ham]">
+                                                <div class="yt-ham-line"></div>
+                                                <div class="yt-ham-line top"></div>
+                                                <div class="yt-ham-line bottom"></div>
+                                                <div class="yt-ham-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="header-cartegories">
+                        <div class="header-cartegories-container">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../hot-topics.html">Hot Topics</a></li>
+                                <li><a href="../car-news.html">Car News</a></li>
+                                <li><a href="../reviews.html">Reviews</a></li>
+                                <li><a href="../new and used cars research.html">New and Used Cars Research</a></li>
+                                <li><a href="../car care.html">Car Care</a></li>
+                                <li><a href="../hot new wheels.html">Hot New Wheels</a></li>
+                                <li><a href="../about-us.html">About Us</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="blog-menu-container" :class="[animateClass]">
+                <div class="blog-menu">
+                    <div>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../hot-topics.html">Hot Topics</a></li>
+                            <li><a href="../car-news.html">Car News</a></li>
+                            <li><a href="../reviews.html">Reviews</a></li>
+                            <li><a href="../new and used cars research.html">New and Used Cars Research</a></li>
+                            <li><a href="../car care.html">Car Care</a></li>
+                            <li><a href="../hot new wheels.html">Hot New Wheels</a></li>
+                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul> 
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mains-container">
+                <div class="mains-main">
+                    <div class="main-width">
+                        <div class="category-indicators-container">
+                            <div>
+                                <p class="category-indicator-desc"><a href="../index.html">Home</a> >> <span> Reviews </span> >> Post</p>
+                            </div>
+                        </div>
+                        
+                        <div class="section-divider"></div>
+
+                        <div class="post-title-container">
+                            <div>
+                                <p class="post-title section-title-style">Examining the raw power of the 2022 model Toyota Land Cruiser Prado XLE V6 Engine</p>
+                            </div> 
+                        </div>
+                        
+                        <div class="post-details-container">
+                            <div>
+                                <p>Cartegory >> Reviews </p>
+                                <p class="post-published-time">Published : (2 minutes ago) September 21st, 2022</p>
+                            </div>
+                        </div>
+                        <div class="article-image-container">
+                            <div>
+                                <img src=" ../blog_assets/images/uploads/21091294750DSC_0972GrsTTVWCYNVbt5PE1ev6kqJ6XOmYbg.jpg ">
+                                <p class="photo-credits">Photo Credits : http://google.com/hescarmart.net </p>
+                            </div>
+                        </div>
+                         <div class="subheading-container">
+    <div>
+        <p> A little insight on this car </p>
+    </div>
+</div>
+<div class="article-text-block">
+    <div>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div>
+</div>
+<div class="list-section-block">
+    <div>
+        <p>
+            <ul>
+                <li> The car comes with a luxury spacing that allows good room for owner's comfort and ride experience </li> 
+<li> The car's noise cancelling tech enables the ride to not just be smooth, but be peaceful, one can attend to a zoom meeting while in the car and even when in traffic. No sound leaves and comes in. Isn't that incredible </li> 
+<li> The car comes with a luxury spacing that allows good room for owner's comfort and ride experience </li> 
+<li> The car's noise cancelling tech enables the ride to not just be smooth, but be peaceful, one can attend to a zoom meeting while in the car and even when in traffic. No sound leaves and comes in. Isn't that incredible </li> 
+
+            </ul>
+        </p>
+    </div>
+</div>
+<div class="subheading-container">
+    <div>
+        <p> Capabilities of the toyota land cruiser prado xle 2022 engine. </p>
+    </div>
+</div>
+<div class="article-image-container">
+    <div>
+        <img src=" ../blog_assets/images/uploads/toyota-landcruiser-prado-banner-1vqAV8yMP0RbBX5RCYySrXCWUlSLEGa.jpg ">
+        <p class="photo-credits"> http://carmart.com/thepicture </p>
+    </div>
+</div>
+<div class="article-text-block">
+    <div>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ligula ac suscipit ullamcorper. Nulla neque orci, egestas ut elit nec, condimentum auctor mauris. Quisque varius massa sed libero fermentum, aliquet elementum felis lacinia. Suspendisse tincidunt aliquam metus, quis semper augue. Fusce enim ipsum, mollis in aliquam iaculis, tempus quis felis. Cras lorem quam, tincidunt vel lorem id, imperdiet lobortis ex. Praesent consequat fringilla dui eget fermentum. Duis convallis varius leo, quis aliquam odio pretium id. Vivamus varius id sem pretium porta. Aenean velit nisl, vestibulum sed gravida ut, gravida in purus. Ut iaculis orci urna, eu congue neque auctor quis. Proin justo tortor, ullamcorper sed nisi ut, hendrerit ornare massa. </p>
+    </div>
+</div>
+<div class="article-text-block">
+    <div>
+        <p> Etiam porta odio nec ullamcorper vestibulum. Etiam porta eu mi sed dapibus. Etiam elit purus, vulputate et rhoncus vel, pretium a velit. Etiam sollicitudin ante sed erat volutpat, non ultricies purus porttitor. In fermentum odio id nisi auctor euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In et rutrum sem. Duis quis purus elit. </p>
+    </div>
+</div>
+<div class="article-text-block">
+    <div>
+        <p> Praesent ornare tempor arcu sed aliquet. Ut eu erat faucibus, ullamcorper dui porta, ultricies tortor. Donec tempus sed quam non molestie. Integer vel lobortis massa. Cras convallis sed ex lacinia sagittis. Praesent ut venenatis turpis. Praesent ac nisi elementum purus ullamcorper pellentesque in at metus. Donec venenatis pharetra condimentum. Nullam lorem urna, vehicula quis nulla at, eleifend cursus nulla. Donec sed felis at neque laoreet vulputate eget at neque. Vestibulum risus nunc, fermentum ut elit non, condimentum hendrerit ex </p>
+    </div>
+</div>
+ 
+                        <div class="section-divider"></div>
+                        <div class="related-cat-container">
+                            <div class="cartegory carnews">
+                                <div>
+                                    <div class="cartegory-container-main">
+                                        <div class="trending-header">
+                                            <p class="section-title-style">More in this category</p>
+                                            <p class="trending-desc">Find all the most recent updated right here now.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-contents">
+                                        <div class="category-content-01">
+                                            <div>
+                                                <div class="card">
+                                                    <div class="card-image-container">
+                                                        <div class="card-image" style="background-image: url(../blog_assets/pexels-albin-berlin-919073.jpg)">
+                                                          <div class="card-contents-container">
+                                                            <p class="card-content-title">We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. </p>
+                                                            <p class="card-content-main">Interior Decoration is not just putting things together to be appealing, It is a lifestyle, a culture. Why? Because the way your space is organized tells alot about you. Lets make that narrative awesome.<span class="readmore-text">>>> Read More >>></span></p>
+                                                            <div class="card-content-blog-info">
+                                                                <p class="card-content-cate"><span>Hot News</span></p>
+                                                                <p class="card-content-published-time">11:22pm, 2nd September, 2022</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category-content-02">
+                                            <div>
+                                                <div class="card">
+                                                    <div class="card-image-container">
+                                                        <div class="card-image" style="background-image: url(../blog_assets/pexels-albin-berlin-919073.jpg)">
+                                                          <div class="card-contents-container">
+                                                            <p class="card-content-title">We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. </p>
+                                                            <p class="card-content-main">Interior Decoration is not just putting things together to be appealing, It is a lifestyle, a culture. Why? Because the way your space is organized tells alot about you. Lets make that narrative awesome.<span class="readmore-text">>>> Read More >>></span></p>
+                                                            <div class="card-content-blog-info">
+                                                                <p class="card-content-cate"><span>Hot News</span></p>
+                                                                <p class="card-content-published-time">11:22pm, 2nd September, 2022</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category-content-03">
+                                            <div>
+                                                <div class="card">
+                                                    <div class="card-image-container">
+                                                        <div class="card-image" style="background-image: url(../blog_assets/pexels-albin-berlin-919073.jpg)">
+                                                          <div class="card-contents-container">
+                                                            <p class="card-content-title">We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. </p>
+                                                            <p class="card-content-main">Interior Decoration is not just putting things together to be appealing, It is a lifestyle, a culture. Why? Because the way your space is organized tells alot about you. Lets make that narrative awesome.<span class="readmore-text">>>> Read More >>></span></p>
+                                                            <div class="card-content-blog-info">
+                                                                <p class="card-content-cate"><span>Hot News</span></p>
+                                                                <p class="card-content-published-time">11:22pm, 2nd September, 2022</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category-content-04">
+                                            <div>
+                                                <div class="card">
+                                                    <div class="card-image-container">
+                                                        <div class="card-image" style="background-image: url(../blog_assets/pexels-albin-berlin-919073.jpg)">
+                                                          <div class="card-contents-container">
+                                                            <p class="card-content-title">We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. </p>
+                                                            <p class="card-content-main">Interior Decoration is not just putting things together to be appealing, It is a lifestyle, a culture. Why? Because the way your space is organized tells alot about you. Lets make that narrative awesome.<span class="readmore-text">>>> Read More >>></span></p>
+                                                            <div class="card-content-blog-info">
+                                                                <p class="card-content-cate"><span>Hot News</span></p>
+                                                                <p class="card-content-published-time">11:22pm, 2nd September, 2022</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-load-more-button">
+                                        <button class="pointercursor">>>> See more in this category >>></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <footer>
+                    <div class="footer-main">
+                        <div class="pristine-user-declaration-container">
+                            <div>
+                                <div class="bottom-logo-container">
+                                    <img src="../blog_assets/images/utils/logo_base.svg">
+                                </div>
+                                <div>
+                                    <p class="user-declaration">
+                                        We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. For feedback or complaints, you can send a mail to <a href="mailto:email@gmail.com">Our User Support</a>, or send a whatsapp message to <a href="https://chat.whatsapp/number">Our Whatsapp Support</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-bottom-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Cartegories</p>
+                                </div>
+                                <div class="cartegories-bottom-contents">
+                                    <div>
+                                        <p class="cb-item">Hot Topics</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car News</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Reviews</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">New and Used Cars Research</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car Care</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Hot New Wheels</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="header-utils bottom">
+                                        <div class="util-social">
+                                            <div class="header-social-container">
+                                                <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="header-social-icons">
+                                                <p><span class="facebook-icon-container"><img src="../blog_assets/images/utils/Facebook Icon.png"></span><span class="twitter-icon-container"><img src="../blog_assets/images/utils/Twitter Icon.png"></span><span class="instagram-icon-container"><img src="../blog_assets/images/utils/Instagram icon.png"></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-links-container-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Quick Links</p>
+                                </div>
+                                <div>
+                                    <ul class="bottom-links">
+                                        <li>Home</li>
+                                        <li>Cartegories</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                        <li>Social</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright of Pristine Car Blog &copy 2022.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/vue.min.js" defer></script>
+    <script type="text/javascript" src="../js/site-main.js" defer></script>
+</html>

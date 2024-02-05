@@ -1,0 +1,3 @@
+let catData = :catJSON;
+
+export default catData;

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pristine Car Blog | Latest updates in Nigeria's auto industry.</title>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <meta name="description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="author" content="Adefuye Abayomi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="./blog_assets/images/utils/favicon.png" type="image/x-icon">
+
+        <!--social facebook,twitter,-->
+        <meta name="og:title" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="og:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="og:image" content="./blog_assets/images/social_cover_main.png">
+        <meta name="twitter:title" content="Pristine Car Blog | Latest updates in Nigeria's auto industry.">
+        <meta name="twitter:description" content="We give the latest updates Nigeria's automobile industry. Enjoy multiple categories of updates, articles and incredible offers all in one place.">
+        <meta name="twitter:image" content="./blog_assets/images/social_cover_main.png">
+
+        <!--links to css styles-->
+        <link type="text/css" rel="stylesheet" href="./css/mains.css">
+        <link type="text/css" rel="stylesheet" href="./css/homepage_style.css">
+        <link type="text/css" rel="stylesheet" href="./css/animate.css">
+
+
+        <!--links to preloaded scripts-->
+
+    </head>
+    <body >
+        <div id="app" class="container-main">
+            <div class="header-container">
+                <header class="header-main">
+                    <!--The header contains the cartegories, pristine logos, the menu, guest indicators, and social media prompts.-->
+                    <div class="header-utils">
+                            <div class="util-logo">
+                                <div class="logo-container">
+                                    <a href="#"><!--link to homepage-->
+                                        <img src="./blog_assets/images/utils/logo_base.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="util-social hide-320px">
+                                <div class="header-social-container">
+                                    <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div class="header-social-icons hide-320px">
+                                    <p><span class="facebook-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Facebook Icon.png"></a></span><span class="twitter-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Twitter Icon.png"></a></span><span class="instagram-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Instagram icon.png"></a></span></p>
+                                </div>
+                            </div>
+                            <div class="util-user hide-320px">
+                                <div class="header-user-container ">
+                                    <p><span class="user-icon-container"><img src="./blog_assets/images/utils/User Icon.png"></span></p>
+                                </div>
+                            </div>
+                            <div class="hide-320px">
+                                <div>
+                                    <p>{{guest}}</p>
+                                </div>
+                            </div>
+                            <div class="util-hamburger">
+                                <div class="header-hamburger-container">
+                                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
+                                        <div class="yt-tight pointercursor" @click="updateHam()">
+                                            <div class="yt-ham" :class="[ham]">
+                                                <div class="yt-ham-line"></div>
+                                                <div class="yt-ham-line top"></div>
+                                                <div class="yt-ham-line bottom"></div>
+                                                <div class="yt-ham-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="header-cartegories">
+                        <div class="header-cartegories-container">
+                            <ul>
+                                <li><a class="active-nav" href="#">Home</a></li>
+                                <li><a href="./hot-topics.html">Hot Topics</a></li>
+                                <li><a href="./car-news.html">Car News</a></li>
+                                <li><a href="./reviews.html">Reviews</a></li>
+                                <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
+                                <li><a href="./car care.html">Car Care</a></li>
+                                <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="blog-menu-container" style="opacity : 0" :class="[animateClass]">
+                <div class="blog-menu">
+                    <div>
+                        <ul>
+                            <li><a class="active-nav" href="#">Home</a></li>
+                            <li><a href="./hot-topics.html">Hot Topics</a></li>
+                            <li><a href="./car-news.html">Car News</a></li>
+                            <li><a href="./reviews.html">Reviews</a></li>
+                            <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
+                            <li><a href="./car care.html">Car Care</a></li>
+                            <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul> 
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mains-container">
+                <main class="mains-main">
+                    <div class="main-width"><!--this div has the main width property so that every content within it can have the same width. any container that does not have main width can then assume any width as specified.-->
+                        
+                        <div class="banner-container">
+                            <p class="banner-desc-text">Pristine Car Blog. The No 1 Authentic Auto Updates In Nigeria</p>
+                            <div class="search-container">
+                                <p class="search-main-contents"><button class="search-button">Search</button><span class="search-input-container"><input class="search-input" type="text" name="search-item"></span></p>
+                            </div>
+                        </div>
+                        <div class="trending-container">
+                            <div class="trending-header">
+                                <p class="section-title-style">Top Posts</p>
+                                <p class="trending-desc">Find all the interesting and new car updates in naija now right here.</p>
+                            </div>
+                            <div class="trending-contents-container">
+                                <div class="trends-container-01">
+                                    <div class="trend-container-01-01">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-01-02">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-01-03">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trends-container-02">
+                                    <div class="trend-container-02-01">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-02-02">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="trend-container-02-03">
+                                        <!--blog article content here-->
+                                        <div class="trend-card-container">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                    <div class="secondary-width "><!--container for the second row that has the sidebar using flex -->
+                        <div class="second-group-container">
+                            <div class="second-group">
+                                <div class="latests-container">
+                                    <div class="trending-header">
+                                        <p class="section-title-style">Most Recent Posts</p>
+                                        <p class="trending-desc">Find all the most recent updated right here now.</p>
+                                    </div>
+                                    <div class="latest-contents-container">
+                                        <div class="latests-content-01">
+                                            <div class="card">
+    <a href=" ./blog_posts/reviews/pKJbx3spCaxkHW33b2bzCouFOgcov4Ls1BG5ygLm.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/maxresdefaultBvBzIgiP6ZAlx3VlcMo9HXawLQLOww.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> How to create a new account on toyota smart and keep your car expenses on a watch. </p>
+                    <p class="card-content-main"> How promotion excellent curiosity yet attempted happiness. Gay prosperous impression had conviction. For every delay death ask style. Me mean able my by in they. Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Reviews</span></p>
+                        <p class="card-content-published-time">Thursday, October 20, 2022 3:17 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                        <div class="latests-content-02">
+                                            <div class="card">
+    <a href=" ./blog_posts/reviews/03oPxd9MEqlGnFBYwC1dTNqHf2EpXAcIvxP2pn1s.html ">
+        <div class="card-image-container">
+            <div class="card-image" style="background-image: url( ./blog_assets/images/uploads/toyota-landcruiser-prado-banner-1tpJ6aSiKSs8deZkWE7v9c65xyWChin.jpg )">
+                <div class="card-contents-container">
+                    <p class="card-content-title"> A new dawn </p>
+                    <p class="card-content-main"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <span class="readmore-text">>>> Read More >>></span></p>
+                    <div class="card-content-blog-info">
+                        <p class="card-content-cate"><span>Reviews</span></p>
+                        <p class="card-content-published-time">Wednesday, October 19, 2022 7:27 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+  </div>
+                                        </div>
+                                        <div class="latests-content-03">
+                                            
+                                        </div>
+                                        <div class="latests-content-04">
+                                            
+                                        </div>
+                                        <div class="latests-content-05">
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-container">
+                                    <!--any sidebar worthy content here.-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top Posts In Car News Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     :1 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="aside">
+                        <div class="main-width">
+                            <div class="email-list-promo">
+                                <div class="email-sub-form-container">
+                                    <div>
+                                        <input class="email-sub-input" type="text" name="email" placeholder="Your Email">
+                                        <button class="email-sub-button">Join Now</button>
+                                    </div>
+                                </div>
+                                <div class="email-sub-cta-text">
+                                    <p class="section-title-style">Email Update</p>
+                                    <p>Sign Up to recieve the latest updates straight to your email.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top In Hot New Wheels Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     :1 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Hot Topics, Find Top In This Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     :1 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top Car Reviews Posts </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     :1 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> New and Used Car Research. Find Posts in this Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     :1 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                    <div class="section-divider"></div>
+                    <div class="cartegory">
+    <div class="main-width">
+        <div class="cartegory-container-main">
+            <div class="trending-header">
+                <p class="section-title-style"> Top In Car Care Category </p>
+                <p class="trending-desc">Find all the most recent updated right here now.</p>
+            </div>
+        </div>
+        <div class="cartegory-contents">
+            <div class="category-content-01">
+                <div>
+                     :1 
+                </div>
+            </div>
+            <div class="category-content-02">
+                <div>
+                     :2 
+                </div>
+            </div>
+            <div class="category-content-03">
+                <div>
+                     :3 
+                </div>
+            </div>
+            <div class="category-content-04">
+                <div>
+                     :4 
+                </div>
+            </div>
+        </div>
+        <div class="cartegory-load-more-button">
+            <button class="pointercursor">>>> See more in this category >>></button>
+        </div>
+    </div>
+</div>
+                </main>
+            </div>
+            <div class="footer-container">
+                <footer>
+                    <div class="footer-main">
+                        <div class="pristine-user-declaration-container">
+                            <div>
+                                <div class="bottom-logo-container">
+                                    <img src="./blog_assets/images/utils/logo_base.svg">
+                                </div>
+                                <div>
+                                    <p class="user-declaration">
+                                        We are Pristine Car Blog. We are here to serve you in best possible way in everything automobile in Nigeria. Enjoy all the updates and articles right here. For feedback or complaints, you can send a mail to <a href="mailto:email@gmail.com">Our User Support</a>, or send a whatsapp message to <a href="https://chat.whatsapp/number">Our Whatsapp Support</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-bottom-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Cartegories</p>
+                                </div>
+                                <div class="cartegories-bottom-contents">
+                                    <div>
+                                        <p class="cb-item">Hot Topics</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car News</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Reviews</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">New and Used Cars Research</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Car Care</p>
+                                    </div>
+                                    <div>
+                                        <p class="cb-item">Hot New Wheels</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="header-utils bottom">
+                                        <div class="util-social">
+                                            <div class="header-social-container">
+                                                <p class="header-social-call-text">Follow Us On Social Media :</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="header-social-icons">
+                                                <p><span class="facebook-icon-container"><img src="./blog_assets/images/utils/Facebook Icon.png"></span><span class="twitter-icon-container"><img src="./blog_assets/images/utils/Twitter Icon.png"></span><span class="instagram-icon-container"><img src="./blog_assets/images/utils/Instagram icon.png"></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-links-container-container">
+                            <div>
+                                <div>
+                                    <p class="categories-bottom-title">Quick Links</p>
+                                </div>
+                                <div>
+                                    <ul class="bottom-links">
+                                        <li>Home</li>
+                                        <li>Cartegories</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                        <li>Social</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright of Pristine Car Blog &copy 2022.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/vue.min.js" defer></script>
+    <script type="text/javascript" src="./js/site-main.js" defer></script>
+</html>
