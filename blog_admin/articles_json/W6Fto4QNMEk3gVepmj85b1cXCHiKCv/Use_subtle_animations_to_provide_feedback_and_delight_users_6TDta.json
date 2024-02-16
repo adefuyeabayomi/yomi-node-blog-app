@@ -1,0 +1,43 @@
+{
+  "title": "Use subtle animations to provide feedback and delight users",
+  "category": "Stunning User Interfaces",
+  "initialized": 1707786379443,
+  "published": 1707789295260,
+  "lastReviewed": "",
+  "coverimage": {},
+  "id": "Use_subtle_animations_to_provide_feedback_and_delight_users_6TDta",
+  "contents": {
+    "v8vh0bRadP1ZW7Ka0Uf5TsN1XFX82j": {
+      "type": "subheading",
+      "content": "A new Sub-Heading",
+      "sid": "v8vh0bRadP1ZW7Ka0Uf5TsN1XFX82j"
+    },
+    "eIRXJe8m8sLq0n3Ir9nHckbySF75dV": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "eIRXJe8m8sLq0n3Ir9nHckbySF75dV"
+    },
+    "RVEyK7aMTYnObleOjjoCPzf0ISl2YI": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "RVEyK7aMTYnObleOjjoCPzf0ISl2YI"
+    },
+    "BvXmAbEJ5hyPQNdUHxy9wAyBqacUV5": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "BvXmAbEJ5hyPQNdUHxy9wAyBqacUV5"
+    },
+    "MTDCKnMtX6uAlQH51LK4fIsr6S7D4d": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "MTDCKnMtX6uAlQH51LK4fIsr6S7D4d"
+    }
+  },
+  "order": [
+    "v8vh0bRadP1ZW7Ka0Uf5TsN1XFX82j",
+    "eIRXJe8m8sLq0n3Ir9nHckbySF75dV",
+    "RVEyK7aMTYnObleOjjoCPzf0ISl2YI",
+    "BvXmAbEJ5hyPQNdUHxy9wAyBqacUV5",
+    "MTDCKnMtX6uAlQH51LK4fIsr6S7D4d"
+  ]
+}

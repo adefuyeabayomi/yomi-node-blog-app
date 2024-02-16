@@ -1,0 +1,43 @@
+{
+  "title": "Implement intuitive hover effects to signify interactive elements",
+  "category": "Stunning User Interfaces",
+  "initialized": 1707786395033,
+  "published": 1707789291031,
+  "lastReviewed": "",
+  "coverimage": {},
+  "id": "Implement_intuitive_hover_effects_to_signify_interactive_elements_3agTE",
+  "contents": {
+    "QoNvmk7hIVItXaMLDH32NCq2J36Kjt": {
+      "type": "subheading",
+      "content": "A new Sub-Heading",
+      "sid": "QoNvmk7hIVItXaMLDH32NCq2J36Kjt"
+    },
+    "l9n4y7zIDsfzBNAt8AOV6J1e3dq6WU": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "l9n4y7zIDsfzBNAt8AOV6J1e3dq6WU"
+    },
+    "WzqiG5AXHWpM4ErBoq4WEFC5dcgxEi": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "WzqiG5AXHWpM4ErBoq4WEFC5dcgxEi"
+    },
+    "4IEOkvk5rKqoAZal7A0iqUjLo12in9": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "4IEOkvk5rKqoAZal7A0iqUjLo12in9"
+    },
+    "aWrR3tQQ5fbQm8r6vAIq6475B1XEA3": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "aWrR3tQQ5fbQm8r6vAIq6475B1XEA3"
+    }
+  },
+  "order": [
+    "QoNvmk7hIVItXaMLDH32NCq2J36Kjt",
+    "l9n4y7zIDsfzBNAt8AOV6J1e3dq6WU",
+    "WzqiG5AXHWpM4ErBoq4WEFC5dcgxEi",
+    "4IEOkvk5rKqoAZal7A0iqUjLo12in9",
+    "aWrR3tQQ5fbQm8r6vAIq6475B1XEA3"
+  ]
+}

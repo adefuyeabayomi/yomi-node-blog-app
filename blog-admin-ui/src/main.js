@@ -9,6 +9,8 @@ import "../node_modules/vuesax/dist/vuesax.css"
 import "../src/assets/bootstrap.css"
 import "../src/assets/css/all.css"
 import "../public/article-style.css"
+import "../src/assets/font.css"
+
 Vue.use(Vuesax);
 Vue.config.productionTip = false
 

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/homePage.vue'
+import HomeView from '../views/homepage.vue'
 
 Vue.use(VueRouter)
 
@@ -10,25 +10,41 @@ const routes = [
     name: 'home-page',
     component: HomeView
   },
+
   {
-    path: '/create-new-draft',
+    path: '/:blogid/:category/create-new-draft',
     name: 'create-new-draft',
-    component: () => import("../views/initDraft.vue")
+    component: () => import("../views/create-draft.vue")
   },
+
   {
-    path: '/edit-draft',
-    name: 'edit-draft',
-    component: () => import("../views/editDraft.vue")
+    path: '/:blogid/:category/edit-draft/:draftid',
+    name: 'edit-draft/',
+    component: () => import("../views/edit-draft.vue")
   },
+
   {
-    path: '/manage-homepage',
+    path: '/:blogid/manage-homepage',
     name: 'manage-homepage',
-    component: () => import("../views/manageHomepage.vue")
+    component: () => import("../views/manage-home.vue")
   },
+
   {
-    path: '/manage-category',
+    path: '/:blogid/manage-category/:category',
     name: 'manage-category',
-    component: () => import("../views/manageCategories.vue")
+    component: () => import("../views/manage-category.vue")
+  },
+
+  {
+    path: '/edit-blog/:blogid',
+    name: 'edit-blog',
+    component: () => import("../views/edit-blog.vue")
+  },
+
+  {
+    path: '/manage-blog/:blogid',
+    name: 'manage-blog',
+    component: () => import("../views/manage-blog.vue")
   }
 ]
 

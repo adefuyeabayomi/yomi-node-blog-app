@@ -1,0 +1,73 @@
+*{
+}
+img {
+  width: 100%;
+}
+.pointercursor:hover {
+    cursor : pointer;
+  }
+  .bold-font {
+      font-weight: 900 !important;
+  }
+
+  .no-margin {
+    margin : 0px !important;
+  }
+  .text-left {
+    text-align: left;
+  }
+  p {
+    margin : 0px !important;
+  }
+
+  .box-style-1 {
+    border : 1px solid;
+    border-radius: 10px;
+  }
+
+  i.fas, i.fa-solid{
+    width: max-content !important;
+  }
+
+  .center {
+    margin: 0px auto;
+  }
+
+  .edit-blog .vs-input__affects{
+    width: 0%;
+  }
+
+  .offset-top-1 {
+    padding-top: 10px
+  }
+  .offset-top-2 {
+    padding-top: 20px
+  }
+  .offset-top-3 {
+    padding-top: 30px
+  }
+  .offset-top-4 {
+    padding-top: 40px
+  }
+  .offset-top-5 {
+    padding-top: 50px
+  }
+  style {
+    color: #ff45d7;
+  }
+  .width-200 {
+    max-width: 200px;
+  }
+  #homepage-area .vs-button__content{
+    height : 37px;
+  }
+  .manage-item-box {
+    border: 0px solid;
+    box-shadow: 0px 0px 10px #bab59d;
+    max-width: 250px !important;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: max-content;
+}

@@ -1,45 +1,17 @@
 <template>
   <div id="app">
+    <p>
+      <router-link to="/">Back To Homepage</router-link>
+    </p>
     <router-view/>
+    <p class="offset-top-5"></p>
+    <p class="offset-top-5"></p>
+    <p class="offset-top-5"></p>
   </div>
 </template>
-
-<style lang="scss">
-.pointercursor:hover {
-  cursor : pointer;
+<script>
+import "./style.main.css"
+export default {
+  
 }
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  padding-bottom : 300px;
-}
-
-.bold-font {
-    font-weight: 900 !important;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-.no-margin {
-  margin : 0px !important;
-}
-.text-left {
-  text-align: left;
-}
-p {
-  margin : 0px !important;
-}
-</style>
+</script>

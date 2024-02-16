@@ -1,0 +1,53 @@
+<header class="header-main">
+    <!--The header contains the cartegories, pristine logos, the menu, guest indicators, and social media prompts.-->
+    <div class="header-utils">
+            <div class="util-logo">
+                <div class="logo-container">
+                    <a href="#"><!--link to homepage-->
+                        <img src=":logoLink">
+                    </a>
+                </div>
+            </div>
+            <div class="util-social hide-320px">
+                <div class="header-social-container">
+                    <p class="header-social-call-text">Follow Us On Social Media :</p>
+                </div>
+            </div>
+            <div class="hide-320px">
+                <div class="header-social-icons hide-320px">
+                    <p><span class="facebook-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Facebook Icon.png"></a></span><span class="twitter-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Twitter Icon.png"></a></span><span class="instagram-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Instagram icon.png"></a></span></p>
+                </div>
+            </div>
+            <div class="util-user hide-320px">
+                <div class="header-user-container ">
+                    <p><span class="user-icon-container"><img src="./blog_assets/images/utils/User Icon.png"></span></p>
+                </div>
+            </div>
+            <div class="hide-320px">
+                <div>
+                    <p>Guest User</p>
+                </div>
+            </div>
+            <div class="util-hamburger">
+                <div class="header-hamburger-container">
+                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
+                        <div class="yt-tight pointercursor" @click="updateHam()">
+                            <div class="yt-ham" :class="[ham]">
+                                <div class="yt-ham-line"></div>
+                                <div class="yt-ham-line top"></div>
+                                <div class="yt-ham-line bottom"></div>
+                                <div class="yt-ham-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="header-cartegories">
+        <div class="header-cartegories-container">
+            <ul>
+                :catLinks
+            </ul>
+        </div>
+    </div>
+</header>

@@ -30,81 +30,13 @@
     <body >
         <div id="app" class="container-main">
             <div class="header-container">
-                <header class="header-main">
-                    <!--The header contains the cartegories, pristine logos, the menu, guest indicators, and social media prompts.-->
-                    <div class="header-utils">
-                            <div class="util-logo">
-                                <div class="logo-container">
-                                    <a href="#"><!--link to homepage-->
-                                        <img src="./blog_assets/images/utils/logo_base.svg">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="util-social hide-320px">
-                                <div class="header-social-container">
-                                    <p class="header-social-call-text">Follow Us On Social Media :</p>
-                                </div>
-                            </div>
-                            <div class="hide-320px">
-                                <div class="header-social-icons hide-320px">
-                                    <p><span class="facebook-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Facebook Icon.png"></a></span><span class="twitter-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Twitter Icon.png"></a></span><span class="instagram-icon-container pointercursor"><a href="#"><!--link to twitter or facebook page--><img src="./blog_assets/images/utils/Instagram icon.png"></a></span></p>
-                                </div>
-                            </div>
-                            <div class="util-user hide-320px">
-                                <div class="header-user-container ">
-                                    <p><span class="user-icon-container"><img src="./blog_assets/images/utils/User Icon.png"></span></p>
-                                </div>
-                            </div>
-                            <div class="hide-320px">
-                                <div>
-                                    <p>{{guest}}</p>
-                                </div>
-                            </div>
-                            <div class="util-hamburger">
-                                <div class="header-hamburger-container">
-                                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
-                                        <div class="yt-tight pointercursor" @click="updateHam()">
-                                            <div class="yt-ham" :class="[ham]">
-                                                <div class="yt-ham-line"></div>
-                                                <div class="yt-ham-line top"></div>
-                                                <div class="yt-ham-line bottom"></div>
-                                                <div class="yt-ham-line"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="header-cartegories">
-                        <div class="header-cartegories-container">
-                            <ul>
-                                <li><a class="active-nav" href="#">Home</a></li>
-                                <li><a href="./hot-topics.html">Hot Topics</a></li>
-                                <li><a href="./car-news.html">Car News</a></li>
-                                <li><a href="./reviews.html">Reviews</a></li>
-                                <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
-                                <li><a href="./car care.html">Car Care</a></li>
-                                <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
-                                <li><a href="./about-us.html">About Us</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </header>
+                :header
             </div>
             <div class="blog-menu-container" style="opacity : 0" :class="[animateClass]">
                 <div class="blog-menu">
                     <div>
                         <ul>
-                            <li><a class="active-nav" href="#">Home</a></li>
-                            <li><a href="./hot-topics.html">Hot Topics</a></li>
-                            <li><a href="./car-news.html">Car News</a></li>
-                            <li><a href="./reviews.html">Reviews</a></li>
-                            <li><a href="./new and used cars research.html">New and Used Cars Research</a></li>
-                            <li><a href="./car care.html">Car Care</a></li>
-                            <li><a href="./hot new wheels.html">Hot New Wheels</a></li>
-                            <li><a href="./about-us.html">About Us</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            :catLinks
                         </ul> 
                     </div>
                     <div>
@@ -204,7 +136,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-divider"></div>
                     :category1
                     <div class="section-divider"></div>
                     <div class="aside">
@@ -223,16 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-divider"></div>
-                    :category2
-                    <div class="section-divider"></div>
-                    :category3
-                    <div class="section-divider"></div>
-                    :category4
-                    <div class="section-divider"></div>
-                    :category5
-                    <div class="section-divider"></div>
-                    :category6
+                    :otherCategories
                 </main>
             </div>
             <div class="footer-container">

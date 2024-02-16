@@ -1,0 +1,43 @@
+{
+  "title": "Delightful user interfaces go beyond meeting functional needs",
+  "category": "Stunning User Interfaces",
+  "initialized": 1707786435911,
+  "published": 1707789285993,
+  "lastReviewed": "",
+  "coverimage": {},
+  "id": "Delightful_user_interfaces_go_beyond_meeting_functional_needs_iF0J1",
+  "contents": {
+    "sfyahP1X63mo986DyoMkHJxGNuuoPd": {
+      "type": "subheading",
+      "content": "A new Sub-Heading",
+      "sid": "sfyahP1X63mo986DyoMkHJxGNuuoPd"
+    },
+    "ivODYbnnplum8Q7cKoRklUwog8Z9pN": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "ivODYbnnplum8Q7cKoRklUwog8Z9pN"
+    },
+    "DpGVIMXFj42sdy7uSSDzqVN8KProiA": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "DpGVIMXFj42sdy7uSSDzqVN8KProiA"
+    },
+    "z3ve7gUWhg27Q8k0tqtyJJRk9FyXTQ": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "z3ve7gUWhg27Q8k0tqtyJJRk9FyXTQ"
+    },
+    "yDBkaBcGUYbw9EquTTO16BY5IWMfTA": {
+      "type": "paragraph",
+      "content": "A new paragraph",
+      "sid": "yDBkaBcGUYbw9EquTTO16BY5IWMfTA"
+    }
+  },
+  "order": [
+    "sfyahP1X63mo986DyoMkHJxGNuuoPd",
+    "ivODYbnnplum8Q7cKoRklUwog8Z9pN",
+    "DpGVIMXFj42sdy7uSSDzqVN8KProiA",
+    "z3ve7gUWhg27Q8k0tqtyJJRk9FyXTQ",
+    "yDBkaBcGUYbw9EquTTO16BY5IWMfTA"
+  ]
+}
